@@ -13,7 +13,6 @@ copyButton.addEventListener("click", () => {
 });
 
 //current time
-// Time display
 const timeElement = document.getElementById("time");
 
 function updateTime() {
