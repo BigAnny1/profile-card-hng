@@ -1,5 +1,216 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box ;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #b07bde, #4a00e0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#profile-card {
+  border: 2px solid black;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 60px rgba(255, 255, 255, 0.3);
+  border-radius: 2rem;
+  overflow: hidden;
+  text-align: center;
+  width: 350px;
+  background-color: #fff;
+}
+header {
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+  padding: 30px 20px;
+  color: white;
+}
+
+#profile-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid white;
+  object-fit: cover;
+}
+
+figcaption h1 {
+  font-weight: 800;
+  color: white;
+}
+figcaption h2 {
+  font-size: 16px;
+  font-style: italic;
+}
+#profile-bio #bio {
+  padding: 0.8rem 0.8rem 0rem 0.8rem;
+  font-size: 14px;
+  color: rgb(103, 93, 93);
+}
+#profile-bio #time {
+    background-color: #8160c5;
+  color: white;
+  margin: 0.5rem 3rem 0.5rem 3rem;
+  border-radius: 2rem;
+}
+
+/* profile-likes */
+
+#profile-likes {
+  padding: 0.3rem 0.5rem;
+}
+#profile-likes h2 {
+  text-align: left;
+  font-size: 18px;
+  padding-bottom: 0.2rem;
+  color: #8160c5;
+}
+#profile-likes ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+#profile-likes ul li {
+  background: #e0e7ff;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 700;
+}
+#profile-likes ul li:hover {
+  background: #c7d2fe;
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+
+/* profile-dislikes */
+#profile-dislikes {
+  padding: 0.3rem 0.5rem;
+}
+#profile-dislikes h2 {
+  text-align: left;
+  font-size: 18px;
+  padding-bottom: 0.2rem;
+  color: #8160c5;
+}
+#profile-dislikes ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+#profile-dislikes ul li {
+  background: #e0e7ff;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 700;
+}
+#profile-dislikes ul li:hover {
+  background: #c7d2fe;
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #8160c5;
+}
+#social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+gap: 15px;
+  margin-top: 1rem;
+}
+#social-links img {
+  border-radius: 1rem;
+  background: white;
+  padding: 1px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#social-links img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.email-section {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: #f3f0ff;
+  padding: 0.6rem 1rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+#email-text {
+  font-size: 14px;
+  color: #4a00e0;
+  font-weight: 600;
+  cursor: text;
+}
+
+#copy-email-btn {
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+margin-bottom:;
+}
+
+#copy-email-btn:hover {
+  background: linear-gradient(135deg, #4a00e0, #8e2de2);
+  transform: scale(1.05);
+}
+
+/* RESPONSIVNESS */
+ @media (min-width: 768px) {
+    body{
+        padding: 1rem;
+    }
+  #profile-card {
+    width: 100%;
+   
+  }
+ 
+
+  #email-section button {
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+  }
+  #profile-likes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+}
+ #profile-dislikes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+ }
+
+} 

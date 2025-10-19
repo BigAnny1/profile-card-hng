@@ -8,25 +8,39 @@
   </head>
 
   <body>
-    <article>
-      <header>
-        <img src="./assets/profile-avatar.jpeg" alt="profile-avatar" width="200px" height="200px                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              "/>
-        <h1>Anointing chidi</h1>
-      </header>
+    <main>
+      <article data-testid="test-profile-card" id="profile-card">
+        <header>
+          <figure>
+            <img
+              src="./assets/profile-avatar.jpeg"
+              alt="profile-avatar"
+              width="90px"
+              height="90px"
+              data-testid=" test-user-avatar"
+              ac
+              id="profile-avatar"
+            />
 
-      <main>
-        <section>
-          <p>
+            <figcaption>
+              <h1 data-testid="test-user-name">Anointing chidi</h1>
+              <h2>front-end developer</h2>
+            </figcaption>
+          </figure>
+        </header>
+
+        <section id="profile-bio">
+          <p data-testid="test-user-bio" id="bio">
             Creative designer and developer passionate about building beautiful,
             user-friendly experiences. Always learning, always growing, coffee
             enthusiat and adventure seeker.
           </p>
-          <p>TIME..</p>
+          <p data-testid="test-user-time" id="time">TIME⏱️</p>
         </section>
 
-        <section>
-          <h2>❤️HOBBIES</h2>
-          <ul>
+        <section id="profile-likes">
+          <h2>HOBBIES:</h2>
+          <ul data-testid="test-user-hobbies">
             <li>Photography</li>
             <li>Hiking</li>
             <li>Reading</li>
@@ -35,59 +49,77 @@
             <li>Music</li>
           </ul>
         </section>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
-        <section>
-          <h2>👎DISLIKES</h2>
-          <ul>
+
+        <section id="profile-dislikes">
+          <h2>DISLIKES:</h2>
+          <ul data-testid="test-user-dislikes">
             <li>Lies</li>
             <li>Spam calls</li>
             <li>Pride</li>
             <li>Beans</li>
           </ul>
         </section>
-      </main>
 
-      <footer>
-        <nav>
-          <a href="https://x.com/big_anointing?s=21" target="_blank"
-            >Twitter<img
-              src="./assets/x-logo-png.png"
-              width="15px"
-              height="15px"
-              alt="twitter-logo"
-          /></a>
-          <a
-            href="https://www.instagram.com/anointing.chidi?igsh=NG42amFjdDhjb3Vq&utm_source=qr"
-            target="_blank"
-            >Instagram
-            <img
-              src="./assets/Instagram logo.jpeg"
-              width="20px"
-              height="20px"
-              alt="instagram-logo"
-          /></a>
-          <a
-            href="https://www.linkedin.com/in/anointing-chidi-9b0b36288"
-            target="_blank"
-            >LinkedIn
-            <img
-              src="./assets/linkedIn.logo.webp"
-              width="20px"
-              height="20px"
-              alt="LinkedIn-logo"
-          /></a>
+        <footer>
+          <nav data-testid="test-user-social-links" id="social-links">
+            <a
+              href="https://x.com/big_anointing?s=21"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><img
+                src="./assets/X-Logo.png"
+                width="30px"
+                height="25px"
+                alt="twitter-logo"
+            /></a>
+            <a
+              href="https://www.instagram.com/anointing.chidi?igsh=NG42amFjdDhjb3Vq&utm_source=qr"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./assets/Instagram logo.jpeg"
+                width="30px"
+                height="30px"
+                alt="instagram-logo"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/anointing-chidi-9b0b36288"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./assets/linkedIn.logo.webp"
+                width="30px"
+                height="30px"
+                alt="LinkedIn-logo"
+            /></a>
 
-          <a href="https://github.com/BigAnny1" target="_blank"
-            >GitHub
-            <img
-              src="./assets/gitub logo.webp"
-              width="20px"
-              height="20px"
-              alt="github-logo"
-          /></a>
-        </nav>
-      </footer>
-    </article>
-    <script src="./script.js"></script>
+            <a
+              href="https://github.com/BigAnny1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./assets/gitub logo.webp"
+                width="30px"
+                height="30px"
+                alt="github-logo"
+            /></a>
+            <a href=""></a>
+          </nav>
+
+          <section class="email-section">
+            <p id="email-text" data-testid="test-user-email">
+              anointing@gmail.com
+            </p>
+            <button id="copy-email-btn">Copy Email</button>
+          </section>
+
+        </footer>
+      </article>
+
+      <script src="./script.js"></script>
+    </main>
   </body>
 </html>
