@@ -13,11 +13,19 @@ copyButton.addEventListener("click", () => {
 });
 
 //current time
+// Time display
 const timeElement = document.getElementById("time");
+
 function updateTime() {
-  const currentTime = Date.now();
-  timeElement.textContent = `${currentTime}⏱️`;
+  const now = new Date();
+  const hours = now.getHours().toString().padStart(2, "0");
+  const minutes = now.getMinutes().toString().padStart(2, "0");
+  const seconds = now.getSeconds().toString().padStart(2, "0");
+
+  const formattedTime = `${hours}:${minutes}:${seconds}`;
+  timeElement.textContent = `${formattedTime}⏱️ `;
 }
 
 updateTime();
-setInterval(updateTime, 1000);
+setInterval(updateTime, 1000); 
+
