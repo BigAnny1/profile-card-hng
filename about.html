@@ -7,27 +7,31 @@
     <link rel="stylesheet" href="./css/about.css" />
   </head>
   <body>
-
-    <article data-testid="test-about-page" id="about-container">
+    <nav>
+      <a href="./index.html">Home</a>
+      <a href="./about.html" aria-current="page">About</a>
+      <a href="./contact.html">Contact</a>
+    </nav>
+    <main data-testid="test-about-page" id="about-container">
       <header>
         <h1>ABOUT ME</h1>
       </header>
 
-      <main>
+      <div id="about-wrapper">
         <div id="about-intro">
-          <section>
+          <figure>
             <img
               src="./assets/my photo.jpg"
               alt="Photo of Chidi Anointing Uchechi"
               class="profile-image"
             />
-          </section>
+          </figure>
 
           <section data-testid="test-about-bio">
             <h2>Bio</h2>
             <p>
-              My name is <strong>Chidi Anointing Uchechi</strong>, a creative mind
-              passionate about building beautiful and functional digital
+              My name is <strong>Chidi Anointing Uchechi</strong>, a creative
+              mind passionate about building beautiful and functional digital
               experiences. My journey started from fashion and storytelling, and
               along the way, I discovered how design and technology can blend to
               solve real problems. Now I'm growing as a
@@ -66,7 +70,7 @@
             <h2>Note to Future Self</h2>
             <p>
               Dear future me, keep your curiosity alive. Don't lose the hunger
-              to learn or the humility to start small. You've come a long way 
+              to learn or the humility to start small. You've come a long way
               remember the nights of practice, the errors, the breakthroughs.
               Keep building, keep sharing, and keep growing; your journey is
               just beginning. Don't forget when you wrote your first code,
@@ -85,7 +89,7 @@
             </p>
           </section>
         </div>
-      </main>
-    </article>
+      </div>
+    </main>
   </body>
 </html>
