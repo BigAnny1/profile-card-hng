@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #b07bde, #4a00e0);
+  display: flex;
+  color: #222;
+  margin: 1rem;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+img {
+  width: 400px;
+  height: 400px;
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#about-container {
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  width: 380px;
+  background: #dbc6f2;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+  font-size: 1.3rem;
+  color: #2b0b82;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+section {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #8b7b7b;
+  text-align: center;
+}
+
+section:last-of-type {
+  border-bottom: none;
+}
+
+strong {
+  color: black;
+}
+
+/* Responsiveness */
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+  main {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  #about-container {
+    max-width: 800px;
+    width: 100%;
+  }
+  h1 {
+    font-size: 2rem;
+
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+  section {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #8b7b7b;
+    text-align: justify;
+  }
+}
