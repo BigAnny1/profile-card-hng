@@ -13,84 +13,91 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+/* CONTACT CARD */
 #contact-card {
   width: 600px;
   margin: 0.5rem;
-  padding: 0.5rem;
-  background-image: url("/assets/telephone\ 3.jpg");
+  padding: 1.5rem;
+  background-image: url("../assets/telephone3.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: black;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 60px rgba(255, 255, 255, 0.3);
+  color: #f5f5f5;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: darken;
   border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
+/* HEADER */
 header {
-   text-align: center;
+  text-align: center;
   margin-bottom: 1rem;
   font-size: 1.8rem;
   font-weight: 700;
   color: #fff;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
-
 }
+
+/* BODY OF CONTACT*/
 main {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
+/* CONTACT INFO */
+
 #contact-info {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
- 
 }
-#contact-info-details p{
-  padding: 0.2rem;
-  font-size: 18px;
-  font-weight: 800;
+/* CONTACT INFO  (email,number etc)*/
+#contact-info-details p {
+  color: #e6e6e6;
+  font-size: 16px;
+  font-weight: 600;
 }
-#contact-info-subtext {
- text-align: center;
-  margin: 1rem 0rem 1rem 0rem;
-font-size: 20px;
-}
-#contact-info-subtext p {
-  padding: 0.2rem;
-  color: black;
-}
-#home-address {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.8rem;
-}
-#email {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.8rem;
-}
+#home-address,
+#email,
 #phone {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.8rem;
-}
-#contact-sub-text {
-  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 
+/* CONTACT INFO (paragraphs) */
+#contact-info-subtext {
+  text-align: center;
+  margin: 1.5rem 0;
+  font-size: 20px;
+}
+#contact-info-subtext p {
+  color: #e0d7ff;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* FORM SECTION */
 form {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 1rem;
+}
+label {
+  margin-bottom: 0.3rem;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 0.7rem;
   margin-bottom: 0.8rem;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -100,12 +107,10 @@ input, textarea {
   font-size: 14px;
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: rgba(255, 255, 255, 0.7);
 }
-
-
-
 
 button {
   width: 50%;
@@ -123,4 +128,17 @@ button {
 button:hover {
   transform: scale(1.05);
   background: linear-gradient(135deg, #ff9ac2, #ff89a6);
+}
+
+
+
+
+
+/* responsivness */
+@media (min-width: 768px) {
+  
+
+
+
+  
 }
