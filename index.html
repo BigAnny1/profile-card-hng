@@ -4,13 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>profile-card</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
+    <header>
+      <nav>
+           <a href="./index.html">Home</a>
+        <a href="./about.html" target="_blank">About</a>
+        <a href="./contact.html" target="_blank">Contact</a>
+      </nav>
+    </header>
+
     <main>
       <article data-testid="test-profile-card" id="profile-card">
-        <header>
+        <section id="card-header">
           <figure>
             <img
               src="./assets/profile-avatar.jpeg"
@@ -27,7 +35,7 @@
               <h2>front-end developer</h2>
             </figcaption>
           </figure>
-        </header>
+        </section>
 
         <section id="profile-bio">
           <p data-testid="test-user-bio" id="bio">
@@ -115,11 +123,9 @@
             </p>
             <button id="copy-email-btn">Copy Email</button>
           </section>
-
         </footer>
       </article>
-
-      <script src="./script.js"></script>
+      <script src="./js/script.js"></script>
     </main>
   </body>
 </html>

@@ -11,6 +11,37 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  flex-direction: column;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+  padding: 1rem 0rem;
+  width: 100%;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border-radius: 8px;
+}
+nav a:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+main {
+  margin-top: 5rem;
 }
 #profile-card {
   border: 2px solid black;
@@ -21,7 +52,7 @@ body {
   width: 350px;
   background-color: #fff;
 }
-header {
+#card-header {
   background: linear-gradient(135deg, #8e2de2, #4a00e0);
   padding: 30px 20px;
   color: white;
@@ -49,7 +80,7 @@ figcaption h2 {
   color: rgb(103, 93, 93);
 }
 #profile-bio #time {
-    background-color: #8160c5;
+  background-color: #8160c5;
   color: white;
   margin: 0.5rem 3rem 0.5rem 3rem;
   border-radius: 2rem;
@@ -119,7 +150,6 @@ figcaption h2 {
   transition: all 0.2s ease-in-out;
 }
 
-
 /* footer */
 footer {
   display: flex;
@@ -132,7 +162,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-gap: 15px;
+  gap: 15px;
   margin-top: 1rem;
 }
 #social-links img {
@@ -176,7 +206,7 @@ gap: 15px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
-margin-bottom:;
+  margin-bottom: ;
 }
 
 #copy-email-btn:hover {
@@ -185,32 +215,28 @@ margin-bottom:;
 }
 
 /* RESPONSIVNESS */
- @media (min-width: 768px) {
-    body{
-        padding: 1rem;
-    }
+@media (min-width: 768px) {
+  body {
+    padding: 1rem;
+  }
   #profile-card {
     width: 100%;
-   
   }
- 
 
   #email-section button {
     padding: 0.7rem 1.2rem;
     font-size: 1rem;
   }
   #profile-likes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  #profile-dislikes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
 }
- #profile-dislikes {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
- }
-
-} 
